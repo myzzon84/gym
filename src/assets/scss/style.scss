@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.heroWrapper {
+    background-image: url('../images/heroBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+
+    @media (max-width: 700px){
+        background-position: -300px center;
+    }
+}
+
+.changesWrapper {
+    .slick-slide {
+        margin-right: 33px;
+        width: 285px !important;
+    }
+
+    .prewArrow {
+        background-color: white;
+        background-image: url('../images/redArrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:hover {
+            background-color: #AE0F0F;
+            background-image: url('../images/whiteArrow.svg');
+            transform: rotate(180deg);
+        }
+    }
+
+    .nextArrow {
+        background-color: white;
+        background-image: url('../images/redArrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: rotate(180deg);
+
+        &:hover {
+            background-color: #AE0F0F;
+            background-image: url('../images/whiteArrow.svg');
+            transform: rotate(0);
+        }
+    }
+}
+
+.ourClasses {
+    background-image: url('../images/dumbbell.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
