@@ -30,11 +30,11 @@ const PricingPlans = () => {
     })
 
     return (
-        <div className={`py-[96px] bg-[#F8F8F8]`}>
-            <div className={`max-w-[1110px] flex mx-auto`}>
-                <div className={`w-[323px] pt-[136px] mr-[57px]`}>
+        <div className={`py-[96px] max1200:py-10 bg-[#F8F8F8]`}>
+            <div className={`max-w-[1110px] flex mx-auto max1200:flex-col`}>
+                <div className={`w-[323px] pt-[136px] mr-[57px] max1200:w-full max1200:mr-0 max1200:flex max1200:flex-col max1200:pt-0 max1200:items-center max1200:mb-10`}>
                     <RedButton style={'w-[239px] h-[32px] mb-[30px]'} text={'PRICING CHART'} textStyle={'text-[14px]/[19px] text-white font-openSans font-semibold'} />
-                    <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide mb-[14px]`}>
+                    <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide mb-[14px] max650:text-[35px]/[40px] max500:w-[80%] max500:text-center`}>
                         Our Simple Pricing plans
                     </h2>
                     <div className={`text-[16px]/[26px] text-[#9E9E9E] font-openSans mb-5`}>
@@ -54,7 +54,7 @@ const PricingPlans = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`flex`}>
+                <div className={`flex max1200:justify-center max700:flex-col items-center`}>
                     {
                         costPlan.map((item, i) => {
                             return(
@@ -71,7 +71,7 @@ const PricingPlans = () => {
 const PricingPlan = ({ listOfServices, index, image, price, monthYear }) => {
     
     return (
-        <div className={`w-[350px]  pb-[32px] ${index === 0 ? 'mr-[30px] bg-[#100F0F]' : 'bg-[#B6B6B6]'} shadow-[0px_0px_29px_4px_rgba(0,0,0,0.29)]`}>
+        <div className={`w-[350px] max400:max-w-[300px] pb-[32px] ${index === 0 ? 'mr-[30px] max700:mr-0 max700:mb-7 bg-[#100F0F]' : 'bg-[#B6B6B6]'} shadow-[0px_0px_29px_4px_rgba(0,0,0,0.29)]`}>
             <div className={`mb-3`}>
                 <img src={image} alt="img" />
             </div>

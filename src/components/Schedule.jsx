@@ -1,5 +1,6 @@
 import RedButton from "./RedButton";
-import { Scrollbars } from 'react-custom-scrollbars-2';
+// import { Scrollbars } from 'react-custom-scrollbars-2';
+import { Scrollbar } from 'react-scrollbars-custom';
 
 const Schedule = () => {
 
@@ -98,8 +99,17 @@ const Schedule = () => {
             <p className={`w-[514px] text-center mx-auto text-[16px]/[26px] text-[#9E9E9E] font-openSans mb-[37px] max650:w-[70%]`}>
                 Gym an unknown printer took a gallery of type and scrambled. It has survived unknown printercenturies.
             </p>
-            <div className={` max1150:overflow-x-scroll`}>
-                <div className={`w-[1130px] h-[502px] bg-[#F8F8F8] mx-auto border-[1px] border-[rgba(174,15,15,0.25)]`}>
+            <Scrollbar
+                style={{ width: window.innerWidth >= 1130 ? 1130 : window.innerWidth - 15, height: 512, margin: '0 auto' }}
+                trackXProps={{
+                    renderer: (props) => {
+                        const { elementRef, ...restProps } = props;
+                        return <span {...restProps} ref={elementRef} className="TrackX" />;
+                    },
+                }}
+                thumbXProps={{ className: 'thumbX' }}
+            >
+                <div className={`w-[1130px] h-[502px] bg-[#F8F8F8] border-[1px] border-[rgba(174,15,15,0.25)]`}>
                     <div className={`flex`}>
                         {headerTable}
                     </div>
@@ -107,7 +117,7 @@ const Schedule = () => {
                         {bodyTable}
                     </div>
                 </div>
-            </div>
+            </Scrollbar>
         </div>
     );
 }

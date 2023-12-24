@@ -22,6 +22,7 @@ export default {
       'max850' : {'max' : '850px'},
       'max800' : {'max' : '800px'},
       'max750' : {'max' : '750px'},
+      'max700' : {'max' : '700px'},
       'max650' : {'max' : '650px'},
       'max600' : {'max' : '600px'},
       'max550' : {'max' : '550px'},
