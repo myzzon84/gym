@@ -22,7 +22,7 @@ const Calculator = () => {
     }, [errors.weight]);
 
     return (
-        <div className={`bg-[url('src/assets/images/calculatorBG.svg')] bg-no-repeat`}>
+        <div className={`bg-[url('./assets/images/calculatorBG.svg')] bg-no-repeat`}>
             <div className={`max-w-[1110px] mx-auto flex h-[367px] items-center justify-between`}>
                 <div className={`max-w-[486px]`}>
                     <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide mb-[11px]`}>

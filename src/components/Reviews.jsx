@@ -101,13 +101,13 @@ const Reviews = () => {
                     </Slider>
                     <div className={` absolute right-[23px] bottom-[18px] w-[132px] flex justify-between z-10`}>
                         <button
-                            className={`w-[54px] h-[40px] border-[1px] border-[#AE0F0F] bg-white bg-[url('src/assets/images/redArrow.svg')] bg-no-repeat bg-center hover:bg-[#AE0F0F] hover:bg-[url('src/assets/images/whiteArrow.svg')] hover:rotate-180`}
+                            className={`w-[54px] h-[40px] border-[1px] border-[#AE0F0F] bg-white bg-[url('./assets/images/redArrow.svg')] bg-no-repeat bg-center hover:bg-[#AE0F0F] hover:bg-[url('./assets/images/whiteArrow.svg')] hover:rotate-180`}
                             onClick={() => { contentSlider.slickPrev()}}
                         >
 
                         </button>
                         <button
-                            className={` rotate-180 w-[54px] h-[40px] border-[1px] border-[#AE0F0F] bg-white bg-[url('src/assets/images/redArrow.svg')] bg-no-repeat bg-center hover:bg-[#AE0F0F] hover:bg-[url('src/assets/images/whiteArrow.svg')] hover:rotate-0`}
+                            className={` rotate-180 w-[54px] h-[40px] border-[1px] border-[#AE0F0F] bg-white bg-[url('./assets/images/redArrow.svg')] bg-no-repeat bg-center hover:bg-[#AE0F0F] hover:bg-[url('./assets/images/whiteArrow.svg')] hover:rotate-0`}
                             onClick={() => {contentSlider.slickNext()}}
                         >
                         </button>

@@ -1,6 +1,6 @@
 const Consultant = () => {
     return (
-        <div className={`h-[450px] bg-[url('src/assets/images/ConsultantBG.png')] flex justify-center items-center`}>
+        <div className={`h-[450px] bg-[url('./assets/images/ConsultantBG.png')] flex justify-center items-center`}>
             <div>
                 <h2 className={`text-[45px]/[61px] text-white font-audiowide mb-[18px]`}>
                     Need a Fitness Consultant?

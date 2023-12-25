@@ -10,9 +10,9 @@ import basketballIcon from '../assets/images/basketballIcon.svg';
 const TopTrainers = () => {
 
     return (
-        <div className={`bg-[#F8F8F8] pt-[92px] pb-[110px] max800:pb-[50px] bg-[url('src/assets/images/weight.png')] bg-no-repeat bg-right-bottom`}>
+        <div className={`bg-[#F8F8F8] pt-[92px] pb-[110px] max800:pb-[50px] bg-[url('./assets/images/weight.png')] bg-no-repeat bg-right-bottom`}>
             <div className={`flex justify-center mb-[29px]`}>
-                <a href="" className={`w-[239px] h-[32px] bg-[url('src/assets/images/buttonBG.svg')] text-[14px]/[32px] text-white bg-no-repeat bg-cover flex justify-center items-center`}>
+                <a href="" className={`w-[239px] h-[32px] bg-[url('./assets/images/buttonBG.svg')] text-[14px]/[32px] text-white bg-no-repeat bg-cover flex justify-center items-center`}>
                     TOP TRAINERS
                 </a>
             </div>
