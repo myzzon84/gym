@@ -70,12 +70,12 @@ const Reviews = () => {
     }, []);
 
     return (
-        <div className={`bg-[#F8F8F8] pt-[101px] pb-[115px]`}>
-            <div className={`flex w-[1048px] mx-auto mb-[26px]`}>
-                <div className={`w-1/2`}>
+        <div className={`bg-[#F8F8F8] pt-[101px] pb-[115px] max1150:flex max1150:flex-col`}>
+            <div className={`flex max-w-[1048px] mx-auto mb-[26px]`}>
+                <div className={`w-1/2 max1150:hidden`}>
 
                 </div>
-                <div className={`w-1/2`}>
+                <div className={`w-1/2 max1150:w-[80%] max1150:mx-auto`}>
                     <RedButton style={`w-[239px] h-[32px] mx-auto mb-[25px]`} text={'TESTIMONIALS'} textStyle={'text-[14px]/[19px] text-white font-openSans font-semibold'} />
                     <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide text-center mb-5`}>
                         Some Reviews From Our Trusted Clients
@@ -85,11 +85,11 @@ const Reviews = () => {
                     </p>
                 </div>
             </div>
-            <div className={`border-[17px] border-[#8DABDD] flex w-[1110px] mx-auto bg-[#F8F8F8] shadow-[0_6px_30px_rgba(0,0,0,0.15)] relative`}>
-                <div className={`w-[477px]`}>
+            <div className={`border-[17px] border-[#8DABDD] flex max-w-[1110px] mx-auto bg-[#F8F8F8] shadow-[0_6px_30px_rgba(0,0,0,0.15)] relative max1150:flex-col-reverse items-center`}>
+                <div className={`w-[477px] max1150:hidden`}>
 
                 </div>
-                <div className={`w-full max-w-[600px] relative`}>
+                <div className={`w-full max-w-[600px] max700:max-w-[450px] relative max1150:static`}>
                     <Slider
                         {...settings}
                         asNavFor={nav2}
@@ -114,7 +114,7 @@ const Reviews = () => {
                     </div>
                 </div>
                 <div
-                    className={` absolute bottom-[10px] left-[17px] w-[467px] h-[586px] border-[3px] border-[#AE0F0F] shadow-[1px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#F8F8F8] rounded-tr-[200px] flex justify-center items-center`}
+                    className={` absolute max1150:static bottom-[10px] left-[17px] w-[467px] h-[586px] border-[3px] border-[#AE0F0F] shadow-[1px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#F8F8F8] rounded-tr-[200px] flex justify-center items-center`}
                 >
                     <div className={`w-[425px] h-[543px] rounded-tr-[200px] overflow-hidden`}>
                         <Slider

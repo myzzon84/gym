@@ -40,17 +40,17 @@ const GymStore = () => {
     return (
         <div className={`pt-[96px] pb-[112px]`}>
             <RedButton style={'w-[239px] h-[32px] mx-auto mb-[27px]'} text={'SHOP ONLINE'} textStyle={'text-[14px]/[19px] text-white font-openSans font-semibold'} />
-            <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide text-center mb-[27px]`}>
+            <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide text-center mb-[27px] max600:w-[80%] max600:mx-auto`}>
                 Our Online Gym Store
             </h2>
-            <p className={`text-[16px]/[26px] text-[#9E9E9E] font-openSans max-w-[517px] text-center mx-auto mb-[33px]`}>
+            <p className={`text-[16px]/[26px] text-[#9E9E9E] font-openSans max-w-[517px] text-center mx-auto mb-[33px] max600:max-w-[75%]`}>
                 Gym an unknown printer took a gallery of type and scrambled. It has survived unknown printercenturies.
             </p>
-            <div className={`max-w-[1110px] mx-auto flex justify-between`}>
+            <div className={`max-w-[1110px] mx-auto flex justify-between flex-wrap max1200:max-w-[740px] max1200:justify-center max800:max-w-[400px]`}>
                 {
                     itemStore.map((item, i) => {
                         return (
-                            <StoreItem promotion={item.promotion} price={item.price} rate={item.rate} title={item.title} image={item.image} key={i} />
+                            <StoreItem promotion={item.promotion} price={item.price} rate={item.rate} title={item.title} image={item.image} key={i} index={i} />
                         );
                     })
                 }
@@ -59,9 +59,9 @@ const GymStore = () => {
     );
 }
 
-const StoreItem = ({ promotion, price, rate, title, image }) => {
+const StoreItem = ({ promotion, price, rate, title, image, index }) => {
     return (
-        <div className={`w-[350px]`}>
+        <div className={`w-[350px] ${index === 0 ? 'max1200:mr-7 max800:mr-0' : ''} max1200:mb-7`}>
             <div className={`h-[342px] bg-[#E9E9E9] relative flex pb-[15px] items-end pl-6`}>
                 <div className={` absolute -top-[6px] left-[30px]`}>
                     <img src={flag} alt="img" />
