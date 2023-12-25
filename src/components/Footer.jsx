@@ -51,7 +51,7 @@ const Footer = () => {
                         </div>
                         <ul>
                             {linkArray.map((item, i, arr) => (
-                                <li className={`text-[16px]/[26px] text-[#A7A7A7] text-center ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
+                                <li className={`text-[16px]/[26px] text-[#A7A7A7] max600:text-center ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
                                     <a href="">
                                         {item}
                                     </a>
