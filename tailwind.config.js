@@ -15,6 +15,7 @@ export default {
       'max1300' : {'max' : '1300px'},
       'max1200' : {'max' : '1200px'},
       'max1150' : {'max' : '1150px'},
+      'max1080' : {'max' : '1080px'},
       'max1050' : {'max' : '1050px'},
       'max1000' : {'max' : '1000px'},
       'max950' : {'max' : '950px'},

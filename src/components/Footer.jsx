@@ -16,14 +16,14 @@ const Footer = () => {
 
     return (
         <div className={`py-[100px] font-openSans`}>
-            <div className={`max-w-[1110px] mx-auto flex justify-between`}>
+            <div className={`max-w-[1110px] mx-auto flex justify-between max1150:flex-col max1150:items-center`}>
                 {/* left block */}
-                <div className={`flex`}>
-                    <div className={`w-[342px] mr-[39px]`}>
+                <div className={`flex max1150:mb-[50px] max600:flex-col`}>
+                    <div className={`w-[342px] mr-[39px] max600:mr-0 max600:flex max600:flex-col max600:items-center max600:mb-10 max400:w-[85%] max400:mx-auto`}>
                         <div className={`mb-[7px]`}>
                             <img src={mainLogoFooter} alt="img" />
                         </div>
-                        <p className={`text-[16px]/[26px] text-[#9E9E9E] mb-[23px]`}>
+                        <p className={`text-[16px]/[26px] text-[#9E9E9E] mb-[23px] max600:text-center`}>
                             Gesent vel rutrum purus Nam vel dui eu risus duis dignissim dignissim Suspen disse at eros tempus
                         </p>
                         <div className={`flex`}>
@@ -42,7 +42,7 @@ const Footer = () => {
                             }
                         </div>
                     </div>
-                    <div>
+                    <div className={` max600:flex max600:flex-col max600:items-center`}>
                         <div>
                             <div className={`text-[16px]/[26px] text-[#484848] font-semibold mb-[9px]`}>
                                 Our Classes
@@ -51,7 +51,7 @@ const Footer = () => {
                         </div>
                         <ul>
                             {linkArray.map((item, i, arr) => (
-                                <li className={`text-[16px]/[26px] text-[#A7A7A7] ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
+                                <li className={`text-[16px]/[26px] text-[#A7A7A7] text-center ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
                                     <a href="">
                                         {item}
                                     </a>
@@ -61,8 +61,8 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* right block */}
-                <div className={`flex`}>
-                    <div className={`mr-[90px]`}>
+                <div className={`flex max1150:flex-row-reverse max1150:w-[520px] max1150:justify-between max600:flex-col max600:items-center`}>
+                    <div className={`mr-[90px] max1150:mr-0 max600:flex max600:flex-col max600:items-center max600:mb-10`}>
                         <div>
                             <div className={`text-[16px]/[26px] text-[#484848] font-semibold mb-[9px]`}>
                                 Quick Links
@@ -71,7 +71,7 @@ const Footer = () => {
                         </div>
                         <ul>
                             {linkArray.map((item, i, arr) => (
-                                <li className={`text-[16px]/[26px] text-[#A7A7A7] ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
+                                <li className={`text-[16px]/[26px] text-[#A7A7A7] max600:text-center ${i === arr.length - 1 ? 'mb-0' : 'mb-[9px]'}`} key={i}>
                                     <a href="">
                                         {item}
                                     </a>
@@ -79,14 +79,14 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div>
+                    <div className={` max600:flex max600:flex-col max600:items-center`}>
                         <div className={``}>
                             <div className={`text-[16px]/[26px] text-[#484848] font-semibold mb-[9px]`}>
                                 Gymat Location
                             </div>
                             <hr className={`h-[2px] bg-[#AE0F0F] w-[70px] mb-[13px]`} />
                         </div>
-                        <p className={`text-[16px]/[25px] text-[#676767] font-openSans max-w-[252px] mb-[13px]`}>
+                        <p className={`text-[16px]/[25px] text-[#676767] font-openSans max-w-[252px] mb-[13px] max600:text-center`}>
                             178 West 27th Street, Suite 527, New York NY 10012 United States
                         </p>
                         <div className={`flex items-center`}>

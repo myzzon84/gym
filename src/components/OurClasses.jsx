@@ -39,15 +39,15 @@ const OurClasses = () => {
                                 },
                             ].map((item, i) => {
                                 return (
-                                    <div className={`flex justify-between items-center w-[285px] ${i === 0 ? 'mr-[14px] max750:mr-0 max1050:mb-5 max800:mb-0 max750:mb-5' : ''}`} key={i}>
+                                    <div className={`flex justify-between items-center w-[285px] max400:flex-col ${i === 0 ? 'mr-[14px] max750:mr-0 max1050:mb-5 max800:mb-0 max750:mb-5' : ''}`} key={i}>
                                         <div className={`min-w-[50px] h-[50px] rounded-[25px] bg-[#FFE5DF] flex justify-center items-center`}>
                                             <img src={item.icon} alt="img" className={``}/>
                                         </div>
                                         <div className={`w-[227px]`}>
-                                            <div className={`text-[16px]/[26px] font-openSans font-semibold`}>
+                                            <div className={`text-[16px]/[26px] font-openSans font-semibold max400:text-center`}>
                                                 {item.title}
                                             </div>
-                                            <p className={`text-[14px]/[24px] text-[#9E9E9E] font-openSans`}>
+                                            <p className={`text-[14px]/[24px] text-[#9E9E9E] font-openSans max400:text-center`}>
                                                 {item.description}
                                             </p>
                                         </div>

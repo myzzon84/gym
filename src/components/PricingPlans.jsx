@@ -21,7 +21,7 @@ const PricingPlans = () => {
     const listOfServices = servicesArr.map((item, i, arr) => {
         return (
             <li key={i} className={`flex  ${i === arr.length - 1 ? 'mb-0' : 'mb-[11px]'}`}>
-                <img src={tick} alt="img" />
+                <img src={tick} alt="img" className={`mr-2`}/>
                 <span className={`text-[16px]/[26px] text-white font-openSans`}>
                     {item}
                 </span>
@@ -83,7 +83,7 @@ const PricingPlan = ({ listOfServices, index, image, price, monthYear }) => {
                     {`/${monthYear === 'month' ? 'Month' : 'Year'} `}
                 </span>
             </div>
-            <ul className={`pl-[35px] pb-[22px]`}>
+            <ul className={`pl-[35px] pb-[22px] max400:pr-5`}>
                 {listOfServices}
             </ul>
             <a href="" className={`block text-[14px]/[19px] text-white font-openSans font-semibold p-[10px] bg-[#AE0F0F] mx-auto w-max`}>

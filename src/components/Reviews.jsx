@@ -15,11 +15,11 @@ const Reviews = () => {
 
     const slickSlidesContent = countSlides.map((item, i) => {
         return (
-            <div className={`w-full pt-[78px]`} key={i}>
+            <div className={`w-full pt-[78px] max385:pt-5`} key={i}>
                 <div className={`flex justify-center mb-5`}>
                     <img src={nineNine} alt="img" />
                 </div>
-                <p className={`text-[16px]/[26px] text-[#1A1818] font-openSans text-center px-[46px] mb-[18px]`}>
+                <p className={`text-[16px]/[26px] text-[#1A1818] font-openSans text-center px-[46px] max385:px-3 mb-[18px]`}>
                     “There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable”.
                 </p>
                 <div className={`text-[19px]/[24px] text-[#AE0F0F] font-openSans ml-[46px] mb-[7px]`}>
@@ -75,9 +75,9 @@ const Reviews = () => {
                 <div className={`w-1/2 max1150:hidden`}>
 
                 </div>
-                <div className={`w-1/2 max1150:w-[80%] max1150:mx-auto`}>
+                <div className={`w-1/2 max1150:w-[80%] max1150:mx-auto max500:w-[90%]`}>
                     <RedButton style={`w-[239px] h-[32px] mx-auto mb-[25px]`} text={'TESTIMONIALS'} textStyle={'text-[14px]/[19px] text-white font-openSans font-semibold'} />
-                    <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide text-center mb-5`}>
+                    <h2 className={`text-[45px]/[55px] text-[#484848] font-audiowide text-center mb-5 max500:text-[35px]/[40px]`}>
                         Some Reviews From Our Trusted Clients
                     </h2>
                     <p className={`text-[16px]/[25px] text-[#9E9E9E] font-openSans text-center px-6`}>
@@ -85,7 +85,7 @@ const Reviews = () => {
                     </p>
                 </div>
             </div>
-            <div className={`border-[17px] border-[#8DABDD] flex max-w-[1110px] mx-auto bg-[#F8F8F8] shadow-[0_6px_30px_rgba(0,0,0,0.15)] relative max1150:flex-col-reverse items-center`}>
+            <div className={`border-[17px] max385:border-[10px] border-[#8DABDD] flex max-w-[1110px] mx-auto bg-[#F8F8F8] shadow-[0_6px_30px_rgba(0,0,0,0.15)] relative max1150:flex-col-reverse items-center max550:w-[90%]`}>
                 <div className={`w-[477px] max1150:hidden`}>
 
                 </div>
@@ -114,9 +114,9 @@ const Reviews = () => {
                     </div>
                 </div>
                 <div
-                    className={` absolute max1150:static bottom-[10px] left-[17px] w-[467px] h-[586px] border-[3px] border-[#AE0F0F] shadow-[1px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#F8F8F8] rounded-tr-[200px] flex justify-center items-center`}
+                    className={` absolute max1150:static bottom-[10px] left-[17px] w-[467px] max550:w-[95%] h-[586px] max550:h-[95%] border-[3px] border-[#AE0F0F] shadow-[1px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#F8F8F8] rounded-tr-[200px] flex justify-center items-center max550:py-4 max400:rounded-none`}
                 >
-                    <div className={`w-[425px] h-[543px] rounded-tr-[200px] overflow-hidden`}>
+                    <div className={`w-[425px] max550:w-[90%] h-[543px] max550:h-[90%] rounded-tr-[200px] overflow-hidden max400:rounded-none`}>
                         <Slider
                             {...settingsSliderImage}
                             asNavFor={nav1}
